@@ -1,0 +1,19 @@
+/* MARGIN */
+.margin.top40 { margin-top: 4rem;}
+.margin.bottom40 { margin-bottom: 4rem;}
+.margin.left40 {margin-left: 4rem;}
+.margin.right40 {margin-right: 4rem;}
+.margin.all40 {margin: 4rem;}
+
+/* MAIN MENU */
+#main-menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 3rem;
+    width: 100%;
+}
+#main-menu .copyright { float: left; }
+#main-menu .menu { float: right; }
