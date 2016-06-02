@@ -1,0 +1,38 @@
+#fullpage .text-wrapper
+{
+    width: 40%;
+    float: left;
+}
+#fullpage h2.title
+{
+    font-size: 4rem;
+    color: #ffffff;
+}
+p.title-info
+{
+    font-size: 1.2rem;
+}
+#fullpage .right-contents
+{
+    width: 50%;
+    float: right;
+    background: #2b542c;
+}
+#firstpage .text-wrapper
+{
+    width:100%;
+    background: #2b669a;
+}
+#firstpage h1
+{
+    font-size: 10rem;
+}
+#firstpage h2.title
+{
+    font-size: 2.5rem;
+}
+#girl
+{
+    float: right;
+    width: 600px;
+}
