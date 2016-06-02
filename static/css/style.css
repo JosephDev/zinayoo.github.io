@@ -1,0 +1,122 @@
+/* MARGIN */
+.margin.top5 { margin-top: 0.5rem;}
+.margin.bottom5 { margin-bottom: 0.5rem;}
+.margin.left5 {margin-left: 0.5rem;}
+.margin.right5 {margin-right: 0.5rem;}
+.margin.all5 {margin: 0.5rem;}
+
+.margin.top10 { margin-top: 1rem;}
+.margin.bottom10 { margin-bottom: 1rem;}
+.margin.left10 {margin-left: 1rem;}
+.margin.right10 {margin-right: 1rem;}
+.margin.all10 {margin: 1rem;}
+
+.margin.top20 { margin-top: 2rem;}
+.margin.bottom20 { margin-bottom: 2rem;}
+.margin.left20 {margin-left: 2rem;}
+.margin.right20 {margin-right: 2rem;}
+.margin.all20 {margin: 2rem;}
+
+.margin.top30 { margin-top: 3rem;}
+.margin.bottom30 { margin-bottom: 3rem;}
+.margin.left30 {margin-left: 3rem;}
+.margin.right30 {margin-right: 3rem;}
+.margin.all30 {margin: 3rem;}
+
+.margin.top40 { margin-top: 4rem;}
+.margin.bottom40 { margin-bottom: 4rem;}
+.margin.left40 {margin-left: 4rem;}
+.margin.right40 {margin-right: 4rem;}
+.margin.all40 {margin: 4rem;}
+
+.margin.top60 { margin-top: 6rem;}
+.margin.bottom60 { margin-bottom: 6rem;}
+.margin.left60 {margin-left: 6rem;}
+.margin.right60 {margin-right: 6rem;}
+.margin.all60 {margin: 6rem;}
+
+/* PADDING */
+.padding.top5 {padding-top: 0.5rem;}
+.padding.bottom5 {padding-bottom: 0.5rem;}
+.padding.left5 {padding-left: 0.5rem;}
+.padding.right5 {padding-right: 0.5rem;}
+.padding.all5 {padding: 0.5rem;}
+
+.padding.top30 {padding-top: 3rem;}
+.padding.bottom30 {padding-bottom: 3rem;}
+.padding.left30 {padding-left: 3rem;}
+.padding.right30 {padding-right: 3rem;}
+.padding.all30 {padding: 3rem;}
+
+/*center*/
+.table
+{
+    display: table;
+}
+.row
+{
+    display: table-row;
+}
+.cell
+{
+    display: table-cell;
+}
+.center
+{
+    text-align: center;
+}
+
+/* MAIN MENU */
+#main-menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 3rem;
+    width: 100%;
+}
+#main-menu .copyright
+{
+    float: left;
+    font-size: 2rem;
+}
+#main-menu .menu
+{
+    float: right;
+    font-size: 1.5rem;
+}
+.section .arrowdown
+{
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/*font*/
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+/*buttons*/
+a.button
+{
+    padding: 12px 30px;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+/*images*/
+.half-img
+{
+    float: left;
+    width: 50%;
+    height: auto;
+    background-color: #66afe9;
+}
+
+
