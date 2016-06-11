@@ -1,0 +1,37 @@
+/*Responsive Screens*/
+
+/*small devices&tablets*/
+@media (min-width: 320px) and (max-width: 500px)
+{
+    #fullpage .text-wrapper
+    {
+        width: 100%;
+        background-color: blue;
+    }
+    #fullpage h2.title
+    {
+        font-size: 2rem;
+        color: #333333;
+    }
+    p.title-info
+    {
+        font-size: 1.2rem;
+    }
+    #fullpage .right-contents
+    {
+        width: 50%;
+        float: right;
+    }
+    #firstpage .text-wrapper
+    {
+        width:100%;
+    }
+    #firstpage h1
+    {
+        font-size: 6rem;
+    }
+    #firstpage h2.title
+    {
+        font-size: 2rem;
+    }
+}
