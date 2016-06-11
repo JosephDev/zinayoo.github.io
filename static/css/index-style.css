@@ -1,38 +1,54 @@
 #fullpage .text-wrapper
 {
-    width: 40%;
+    width: 50%;
     float: left;
 }
 #fullpage h2.title
 {
-    font-size: 4rem;
-    color: #ffffff;
+    font-size: 6rem;
 }
 p.title-info
 {
     font-size: 1.2rem;
+    display: inline-block;
+    font-weight: 500;
 }
 #fullpage .right-contents
 {
-    width: 50%;
+    width: 30%;
     float: right;
-    background: #2b542c;
+}
+.right-contents img
+{
+    width: 700px;
+    height: 700px;
+    bottom: 0;
 }
 #firstpage .text-wrapper
 {
     width:100%;
-    background: #2b669a;
+    height: 50%;
 }
 #firstpage h1
 {
-    font-size: 10rem;
+    font-size: 9rem;
 }
 #firstpage h2.title
 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    color: #333333;
+    line-height: 2.7rem;
 }
-#girl
+.text-wrapper .category
 {
-    float: right;
-    width: 600px;
+    font-size: 1.1rem;
+}
+.box-with-text {
+    background: #f0c3c8; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f0c3c8, #d3d170); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f0c3c8, #d3d170); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f0c3c8, #d3d170); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f0c3c8, #d3d170); /* Standard syntax */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }

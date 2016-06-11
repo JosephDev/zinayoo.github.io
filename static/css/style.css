@@ -48,7 +48,19 @@
 .padding.right30 {padding-right: 3rem;}
 .padding.all30 {padding: 3rem;}
 
-/*center*/
+.padding.top40 {padding-top: 4rem;}
+.padding.bottom40 {padding-bottom: 4rem;}
+.padding.left40 {padding-left: 4rem;}
+.padding.right40 {padding-right: 4rem;}
+.padding.all40 {padding: 4rem;}
+
+.padding.top60 {padding-top: 6rem;}
+.padding.bottom60 {padding-bottom: 6rem;}
+.padding.left60 {padding-left: 6rem;}
+.padding.right60 {padding-right: 6rem;}
+.padding.all60 {padding: 6rem;}
+
+/*table*/
 .table
 {
     display: table;
@@ -73,20 +85,23 @@
     top: 0;
     left: 0;
     z-index: 1;
-    padding: 3rem;
+    padding: 2rem;
     width: 100%;
+    background: #ffffff;
 }
 #main-menu .copyright
 {
     float: left;
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 #main-menu .menu
 {
     float: right;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-bottom: 3px solid #333333;
 }
-.section .arrowdown
+.arrowdown
 {
     display: block;
     text-align: center;
@@ -96,16 +111,18 @@
 }
 
 /*font*/
-body
+body, header
 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 500;
+    letter-spacing: 0rem;
 }
 
 /*buttons*/
 a.button
 {
-    padding: 12px 30px;
+    font-weight: 500;
+    padding: 17px 37px;
     color: #000000;
     border: 2px solid #000000;
 }
