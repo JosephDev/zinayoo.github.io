@@ -102,10 +102,17 @@
             </a>
           </div>
           <div class="two-column col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <a href="fashion-app.html">
+            <div class="outer-box">
               <img src="static/images/fashion-app_00.jpg">
-              <h3>Fashion E-Commerce App</h3>
-            </a>
+            </div>
+            <div class="inner-box"
+                 style="position: absolute; padding: 10%; height: 100%; width: 100%; left: 0; opacity: 0;">
+              <div class="black-box" style="background: black; height: 100%; width: 100%; opacity: 0.3;">
+                <a href="fashion-app.html">
+                  <h3>Fashion E-Commerce App</h3>
+                </a>
+              </div>
+            </div>
           </div>
           <div class="two-column col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <a href="fashion-app.html">
@@ -162,5 +169,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="static/library/bootstrap/js/bootstrap.min.js"></script>
+      <script>
+        $(function(){
+          $("div.inner-box")
+                  .mouseover(function(){ $(this).css('opacity', 1); })
+                  .mouseout(function(){ $(this).css('opacity', 0); });
+        });
+      </script>
   </body>
 </html>
