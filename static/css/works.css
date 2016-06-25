@@ -2,44 +2,8 @@ div.featured-work
 {
     width: 100%;
     height: 100%;
-}
-#carousel-example-generic
-{
-    width:100%;
-    height:50%;
-}
-/*!*table*!*/
-/*#works .table*/
-/*{*/
-    /*display: table;*/
-    /*width: 100%;*/
-    /*hegith: 100%;*/
-/*}*/
-/*#works .row*/
-/*{*/
-    /*display: table-row;*/
-    /*height: 50%;*/
-    /*background-color: #0a833d;*/
-/*}*/
-/*#works .cell*/
-/*{*/
-    /*display: table-cell;*/
-    /*width: 50%;*/
-    /*height: 50%;*/
-    /*background-color: #0a833d;*/
-/*}*/
-#works .center
-{
-    text-align: center;
-}
-.half-img
-{
-    min-height: 400px;
-    background-color: #0e83cd;
-}
-.half-img:nth-child(3n+1)
-{
-    background-color: #4cae4c;
+    margin: 0;
+    padding: 0;
 }
 .text-wrapper h1
 {
@@ -70,13 +34,81 @@ ul, li
     font-size: 3rem;
     font-weight: 500;
 }
-.works .aligner
+.works .filter
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    top: -50px;
 }
-.aligner-item
+.works .two-column
 {
+    min-height: 348px;
+    background-color: #0e83cd;
+}
+.works img
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 350px;
     max-width: 100%;
+    min-height: 348px;
 }
+.works a:hover
+{
+    opacity: 0.2;
+    background-color: #e1445c;
+}
+.fp-slidesContainer
+{
+    min-width: 100%;
+    height: 50%;
+}
+/*.works .flex-container*/
+/*{*/
+    /*display: flex;*/
+/*}*/
+.flex-container
+{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.flex-items
+{
+    display: inline-flex;
+    height: 100px;
+    justify-content: center;
+    background-color: #0a833d;
+    margin: 0 auto;
+}
+.works h3
+{
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+.works .carousel-inner
+{
+    width: 100%;
+    min-height: 348px;
+}
+.carousel-inner img
+{
+    width: 100%;
+}
+/*.works .text-box*/
+/*{*/
+    /*width: 100px;*/
+    /*height: 50px;*/
+    /*display: inline-flex;*/
+    /*margin: 0 auto;*/
+    /*vertical-align: middle;*/
+    /*background-color: #000000;*/
+/*}*/

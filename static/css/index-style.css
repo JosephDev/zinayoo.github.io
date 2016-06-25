@@ -16,9 +16,10 @@
     bottom: 0;
     right: 2rem;
 }
-img#girl
+#secondpage img
 {
-    width: 75%;
+    width: 10%;
+    position: absolute;
     right:0;
     bottom:0;
 }
