@@ -12,14 +12,14 @@ div.featured-work
     color: #f7ebe7;
     left: 15px;
 }
-ul, li
-{
-    list-style: none;
-    display: inline-block;
-    float: left;
-    padding-right: 2rem;
-    z-index: 0;
-}
+/*ul, li*/
+/*{*/
+    /*list-style: none;*/
+    /*display: inline-block;*/
+    /*float: left;*/
+    /*padding-right: 2rem;*/
+    /*z-index: 0;*/
+/*}*/
 .works li:nth-child(last-child)
 {
     padding-right: 0;
@@ -34,41 +34,29 @@ ul, li
     font-size: 3rem;
     font-weight: 500;
 }
-.works .filter
-{
-    position: relative;
-    top: -50px;
-}
 .works .two-column
 {
-    min-height: 348px;
-    background-color: #0e83cd;
+    min-height: 375px;
+    box-sizing: border-box;
 }
 .works img
 {
     position: absolute;
-    top: 0;
+    /*top: 0;*/
     bottom: 0;
     left: 0;
     right: 0;
-    min-width: 350px;
-    max-width: 100%;
-    min-height: 348px;
+    height: 80%;
+    /*display: block;*/
+    margin: 0 auto;
 }
-.works a:hover
+img#didyouknow
 {
-    opacity: 0.2;
-    background-color: #e1445c;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid red;
 }
-.fp-slidesContainer
-{
-    min-width: 100%;
-    height: 50%;
-}
-/*.works .flex-container*/
-/*{*/
-    /*display: flex;*/
-/*}*/
 .flex-container
 {
     display: -webkit-box;
@@ -85,8 +73,8 @@ ul, li
     display: inline-flex;
     height: 100px;
     justify-content: center;
-    background-color: #0a833d;
     margin: 0 auto;
+    vertical-align: middle;
 }
 .works h3
 {
@@ -94,21 +82,28 @@ ul, li
     text-align: center;
     color: #ffffff;
 }
-.works .carousel-inner
+/*hover*/
+.works .inner-box
 {
+    position: absolute;
+    padding:10%;
+    height: 100%;
     width: 100%;
-    min-height: 348px;
+    left: 0;
+    opacity: 0;
 }
-.carousel-inner img
+.works .black-box
 {
+    background: black;
+    height: 100%;
     width: 100%;
+    opacity: 0.8;
 }
-/*.works .text-box*/
-/*{*/
-    /*width: 100px;*/
-    /*height: 50px;*/
-    /*display: inline-flex;*/
-    /*margin: 0 auto;*/
-    /*vertical-align: middle;*/
-    /*background-color: #000000;*/
-/*}*/
+.works .text
+{
+    font-size: 2rem;
+    color: #ffffff;
+    opacity: 1;
+    text-align: center;
+    vertical-align: middle;
+}
