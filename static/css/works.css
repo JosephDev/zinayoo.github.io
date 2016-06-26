@@ -12,18 +12,6 @@ div.featured-work
     color: #f7ebe7;
     left: 15px;
 }
-/*ul, li*/
-/*{*/
-    /*list-style: none;*/
-    /*display: inline-block;*/
-    /*float: left;*/
-    /*padding-right: 2rem;*/
-    /*z-index: 0;*/
-/*}*/
-.works li:nth-child(last-child)
-{
-    padding-right: 0;
-}
 .category h3
 {
     font-size: 1.2rem;
@@ -52,11 +40,26 @@ div.featured-work
 }
 img#didyouknow
 {
-    width: 60%;
-    height: auto;
+    height: 20%;
+    width: auto;
     margin: 0 auto;
-    border: 1px solid red;
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
 }
+img#ikea
+{
+    height: 70%;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+}
+.outer-box .app
+{
+    height: 90%;
+}
+
 .flex-container
 {
     display: -webkit-box;
@@ -86,7 +89,7 @@ img#didyouknow
 .works .inner-box
 {
     position: absolute;
-    padding:10%;
+    padding:5%;
     height: 100%;
     width: 100%;
     left: 0;
@@ -107,3 +110,36 @@ img#didyouknow
     text-align: center;
     vertical-align: middle;
 }
+.works .wrapper
+{
+    width: 90%;
+    margin: 0 auto;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*Owl Carousel edited by z*/
+#owl-demo .owl-item div
+{
+    padding: 0;
+    margin: 0;
+    width: auto;
+    max-height: 500px;
+}
+#owl-demo .owl-item img
+{
+    padding: 0;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+/*div.item img*/
+/*{*/
+    /*height: 80%;*/
+    /*position: relative;*/
+    /*bottom: 0;*/
+/*}*/
