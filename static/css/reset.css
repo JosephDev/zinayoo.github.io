@@ -118,7 +118,7 @@ input, select {
 /*font*/
 body, header
 {
-    font-family: 'Montserrat', sans-serif;;
-    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     letter-spacing: 0rem;
 }

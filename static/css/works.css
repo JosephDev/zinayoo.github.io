@@ -55,29 +55,17 @@ img#ikea
     top: 15%;
     bottom: 15%;
 }
+img#spinner
+{
+    width: auto;
+    height: 90%;
+    position: absolute;
+    left: 25%;
+    right: 5%;
+}
 .outer-box .app
 {
     height: 90%;
-}
-
-.flex-container
-{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-}
-.flex-items
-{
-    display: inline-flex;
-    height: 100px;
-    justify-content: center;
-    margin: 0 auto;
-    vertical-align: middle;
 }
 .works h3
 {
@@ -85,11 +73,12 @@ img#ikea
     text-align: center;
     color: #ffffff;
 }
+
 /*hover*/
 .works .inner-box
 {
     position: absolute;
-    padding:5%;
+    /*padding:5%;*/
     height: 100%;
     width: 100%;
     left: 0;
@@ -101,6 +90,13 @@ img#ikea
     height: 100%;
     width: 100%;
     opacity: 0.8;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    transition-timing-function: ease;
+}
+.inner-box h6
+{
+    font-size: 1.3rem;
 }
 .works .text
 {
@@ -110,15 +106,15 @@ img#ikea
     text-align: center;
     vertical-align: middle;
 }
-.works .wrapper
-{
-    width: 90%;
-    margin: 0 auto;
-}
+/*.works .wrapper*/
+/*{*/
+    /*width: 85%;*/
+    /*margin: 0 auto;*/
+/*}*/
 #owl-demo .item img{
     display: block;
     width: 100%;
-    height: auto;
+    max-height: auto;
 }
 
 /*Owl Carousel edited by z*/
@@ -127,7 +123,7 @@ img#ikea
     padding: 0;
     margin: 0;
     width: auto;
-    max-height: 500px;
+    height: 50%;
 }
 #owl-demo .owl-item img
 {
@@ -137,9 +133,10 @@ img#ikea
     -moz-border-radius: 0;
     border-radius: 0;
 }
-/*div.item img*/
-/*{*/
-    /*height: 80%;*/
-    /*position: relative;*/
-    /*bottom: 0;*/
-/*}*/
+
+@media (max-width:750px)
+{
+    .works .wrapper {
+        width: 100%;
+    }
+}

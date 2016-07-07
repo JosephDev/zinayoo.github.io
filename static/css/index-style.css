@@ -1,11 +1,11 @@
-#fullpage .left-container
-{
-    width: 50%;
-    height: 300px;
-    vertical-align: middle;
-    float: left;
-    background-color: #0e83cd;
-}
+/*#fullpage .left-container*/
+/*{*/
+    /*width: 50%;*/
+    /*height: 300px;*/
+    /*vertical-align: middle;*/
+    /*float: left;*/
+    /*background-color: #0e83cd;*/
+/*}*/
 #fullpage h2.title
 {
     font-size: 6rem;
@@ -24,11 +24,6 @@
     bottom:0;
 }
 
-#firstpage .text-wrapper
-{
-    width:100%;
-    height: 50%;
-}
 #firstpage h1
 {
     font-size: 20rem;
@@ -54,4 +49,14 @@ p.title-info
     font-size: 1.2rem;
     display: inline-block;
     font-weight: 500;
+}
+.main-image img
+{
+    max-width:90%;
+    z-index: 100;
+}
+.main-image .text-wrapper
+{
+    z-index: 1;
+    display: inline-block;
 }

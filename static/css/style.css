@@ -1,4 +1,10 @@
 /* MARGIN */
+.margin.top2 { margin-top: 0.2rem;}
+.margin.bottom2 { margin-bottom: 0.2rem;}
+.margin.left2 {margin-left: 0.2rem;}
+.margin.right2 {margin-right: 0.2rem;}
+.margin.all2 {margin: 0.2rem;}
+
 .margin.top5 { margin-top: 0.5rem;}
 .margin.bottom5 { margin-bottom: 0.5rem;}
 .margin.left5 {margin-left: 0.5rem;}
@@ -71,6 +77,14 @@
     text-align: center;
 }
 
+
+/*DISPLAY*/
+.display.inline-block
+{
+    display: inline-block;
+}
+
+
 /* MAIN MENU */
 #main-menu
 {
@@ -82,26 +96,40 @@
     width: 100%;
     /*background: #ffffff;*/
 }
+/*#main-menu .left-menu*/
+/*{*/
+    /*width: 15%;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*transform-origin: center;*/
+    /*-webkit-transform-origin: center;*/
+    /*-webkit-transform: translate(50%, -50%) rotate(-90deg) translateY(-50%);*/
+    /*transform: translate(50%, -50%) rotate(-90deg) translateY(-50%);*/
+/*}*/
 #main-menu .copyright
 {
-    float: left;
-    font-size: 1.5em;
-    font-weight: 900;
+    /*float: left;*/
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 600;
 }
-#main-menu .menu
-{
-    float: right;
-    font-size: 1.3rem;
-    font-weight: 900;
-    border-bottom: 3px solid #333333;
-}
-.arrowdown
+/*#main-menu .menu*/
+/*{*/
+    /*float: right;*/
+    /*font-size: 1.5rem;*/
+    /*font-weight: 700;*/
+    /*border-bottom: 2px solid #333333;*/
+/*}*/
+a.arrowdown
 {
     display: block;
     text-align: center;
     width: 100%;
     position: fixed;
     bottom: 0;
+    font-size: 40px;
 }
 
 /*buttons*/
@@ -168,4 +196,34 @@ footer h3
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+}
+
+.flex-container
+{
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.flex-items
+{
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.wrapper
+{
+    width: 90%;
+    margin: 0 auto;
+}
+.main-image
+{
+    width:100%;
 }
