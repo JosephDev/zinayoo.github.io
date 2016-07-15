@@ -1,20 +1,12 @@
-/*#fullpage .left-container*/
-/*{*/
-    /*width: 50%;*/
-    /*height: 300px;*/
-    /*vertical-align: middle;*/
-    /*float: left;*/
-    /*background-color: #0e83cd;*/
-/*}*/
-#fullpage h2.title
+#fullpage
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fullpage h6.title
 {
     font-size: 6rem;
-}
-#fullpage .right-container
-{
-    width: 40%;
-    bottom: 0;
-    right: 2rem;
 }
 #secondpage img
 {
@@ -23,7 +15,6 @@
     right:0;
     bottom:0;
 }
-
 #firstpage h1
 {
     font-size: 20rem;
@@ -31,14 +22,13 @@
     color: #f7ebe7;
     left: 15px;
 }
-#firstpage h2.title
+#fullpage h2.title
 {
-    font-size: 1.6rem;
-    color: #333333;
-    line-height: 2.5rem;
+    font-size: 4.5rem;
+    /*color: #333333;*/
+    line-height: 3.5rem;
     z-index: 0;
     position: relative;
-    top: -100px;
 }
 .text-wrapper .category
 {
@@ -50,13 +40,34 @@ p.title-info
     display: inline-block;
     font-weight: 500;
 }
-.main-image img
+.main-img
 {
-    max-width:90%;
-    z-index: 100;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    background-color: red;
 }
-.main-image .text-wrapper
+#fullpage .content-container
 {
-    z-index: 1;
-    display: inline-block;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+#fullpage img
+{
+    max-height: 100%;
+}
+#fullpage .text-wrapper
+{
+    width: 300px;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    margin-right: -5%;
+    background-color: #0f0f0f;
+    color: #ffffff;
 }

@@ -2,6 +2,7 @@
 {
     background-color: #ffffff;
     opacity: 0.9;
+    position: relative;
 }
 .menu .wrapper
 {
@@ -20,14 +21,14 @@ div.wrapper h4
     font-size: 2rem;
     line-height: 3rem;
 }
-#main-menu a.menu
-{
-    float: left;
-}
-#main-menu a.menu:first-child
-{
-    margin-top: -2px;
-}
+/*#main-menu a.menu*/
+/*{*/
+    /*float: left;*/
+/*}*/
+/*#main-menu a.menu:first-child*/
+/*{*/
+    /*margin-top: -2px;*/
+/*}*/
 nav i:first-child
 {
     font-size: 34px;
@@ -38,4 +39,8 @@ nav i:first-child
 .contact-info a
 {
     font-size: 22px;
+}
+.header-menu-close
+{
+    float: left;
 }

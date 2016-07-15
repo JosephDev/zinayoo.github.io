@@ -25,21 +25,16 @@
         <![endif]-->
     </head>
     <body class="body-wrapper">
-        <header id="main-menu">
-            <nav>
-                <!--<a id="show" href="menu.html" class="menu">-->
-                    <!--<i class="ion-android-menu"></i>-->
-                <!--</a>-->
-                <a id="hide" href="menu.html" class="menu">
+        <div class="header">
+            <div class="header-menu-close margin left20 top20">
+                <a class="close" href="index.html">
                     <i class="ion-android-close"></i>
                 </a>
-                <a href="index.html" class="copyright">
-                    <h1>ZINA YOO</h1>
-                </a>
-            </nav>
-        </header>
+            </div>
+        </div>
+        <div class="clear"></div>
         <div class="menu">
-            <div class="wrapper margin top60 left60">
+            <div class="wrapper margin top20 left60">
                 <a href="index.html">
                     <h3 class="margin ">Home</h3>
                 </a>
@@ -92,14 +87,17 @@
             $(document).ready(function() {
                 $('#fullpage').fullpage();
             });
-//            $(document).ready(function(){
-//                $("#hide").click(function(){
-//                    $(".menu").hide();
-//                });
-//                $("#show").click(function(){
-//                    $(".menu").show();
-//                });
-//            });
+            $(function(){
+                $(".header-menu").hide();
+                $(".close").on("click", function(){
+//                    if($(this).text() == 'open'){
+//                        $(this).text("close");
+//                    } else {
+//                        $(this).text("open");
+//                    }
+                    $(".header-menu").toggle();
+                });
+            });
         </script>
     </body>
 </html>

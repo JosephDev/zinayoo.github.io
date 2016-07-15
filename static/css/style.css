@@ -23,6 +23,12 @@
 .margin.right20 {margin-right: 2rem;}
 .margin.all20 {margin: 2rem;}
 
+.margin.top25 { margin-top: 2.5rem;}
+.margin.bottom25 { margin-bottom: 2.5rem;}
+.margin.left25 {margin-left: 2.5rem;}
+.margin.right25 {margin-right: 2.5rem;}
+.margin.all25 {margin: 2.5rem;}
+
 .margin.top30 { margin-top: 3rem;}
 .margin.bottom30 { margin-bottom: 3rem;}
 .margin.left30 {margin-left: 3rem;}
@@ -94,18 +100,7 @@
     z-index: 1;
     padding: 2rem;
     width: 100%;
-    /*background: #ffffff;*/
 }
-/*#main-menu .left-menu*/
-/*{*/
-    /*width: 15%;*/
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*transform-origin: center;*/
-    /*-webkit-transform-origin: center;*/
-    /*-webkit-transform: translate(50%, -50%) rotate(-90deg) translateY(-50%);*/
-    /*transform: translate(50%, -50%) rotate(-90deg) translateY(-50%);*/
-/*}*/
 #main-menu .copyright
 {
     /*float: left;*/
@@ -129,7 +124,7 @@ a.arrowdown
     width: 100%;
     position: fixed;
     bottom: 0;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 /*buttons*/
@@ -200,13 +195,7 @@ footer h3
 
 .flex-container
 {
-    width: 100%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
@@ -226,4 +215,22 @@ footer h3
 .main-image
 {
     width:100%;
+}
+div.border
+{
+    border: 10px solid #3fe0bd;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.header-menu
+{
+    position: absolute;
+    z-index: 10;
+}
+.header i
+{
+    font-size: 2.3rem;
+    vertical-align: top;
+    color: #333333;
 }
