@@ -1,0 +1,46 @@
+.body-wrapper
+{
+    background-color: #ffffff;
+    opacity: 0.9;
+    position: relative;
+}
+.menu .wrapper
+{
+    width: 80%;
+    /*height: 100%;*/
+
+}
+div.wrapper h3
+{
+    font-size: 3.2rem;
+    line-height: 5rem;
+    font-weight: 600;
+}
+div.wrapper h4
+{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+/*#main-menu a.menu*/
+/*{*/
+    /*float: left;*/
+/*}*/
+/*#main-menu a.menu:first-child*/
+/*{*/
+    /*margin-top: -2px;*/
+/*}*/
+nav i:first-child
+{
+    font-size: 34px;
+    line-height: 60px;
+    vertical-align: top;
+    width: 34px;
+}
+.contact-info a
+{
+    font-size: 22px;
+}
+.header-menu-close
+{
+    float: left;
+}
