@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 	<link rel="stylesheet" type="text/css" href="static/css/index-style.css">
 	<link rel="stylesheet" type="text/css" href="static/css/media_screen.css">
-	<link rel="stylesheet" type="text/css" href="static/css/menu.css">
+	<link rel="stylesheet" type="text/css" href="static/library/spinner/css/spinner-kit.css">
 </head>
 <body>
 	<header id="main-menu">
@@ -27,96 +27,112 @@
 		</nav>
 	</header>
 	<div class="header">
-		<div class="header-menu margin left20 top20">
+		<div class="header-menu margin left20 top20 scene_element-fadeinup">
 			<a class="open" href="menu.html">
 				<i class="ion-android-menu"></i>
 			</a>
 		</div>
-		<div class="header-menu-close margin left20 top20">
+		<div class="header-menu-close margin left20 top20 scene_element-fadeinup">
 			<a class="close" href="menu.html">
 				<i class="ion-android-close"></i>
 			</a>
 		</div>
 	</div>
-	<div class="border"></div>
-	<div id="fullpage">
-		<div id="firstpage" class="section">
-			<div class="content-container">
-				<div class="main-img">
-					<img src="static/images/spinner_main_00.png">
-					<div class="text-wrapper">
-						<h6 class="category margin bottom5">UI/VISUAL DESIGN</h6>
-						<h2 class="title margin bottom5">FASHION</h2>
-						<h2 class="title margin bottom5">APP</h2>
+	<div id="fullpage" class="scene">
+		<div class="flex-wrapper">
+			<div id="firstpage" class="section" style="background-color: #a8e0e1">
+				<div class="content-container">
+					<div class="main-img">
+						<div class="box">
+							<div class="square big"></div>
+							<div class="square small"></div>
+						</div>
+						<img src="static/images/spinner_main_00.png">
+						<div class="text-wrapper">
+							<h6 class="category margin bottom5 bg-black">INTERACTION DESIGN</h6>
+							<h2 class="title margin bottom5 bg-black">SPINNER</h2>
+							<h2 class="title margin bottom5 bg-black">Kit</h2>
+						</div>
 					</div>
 				</div>
-			</div>
-			<a href="" class="arrowdown">
-				<i class="ion-ios-arrow-thin-down"></i>
-			</a>
-		</div>
-		<div id="secondpage" class="section">
-			<div class="content-container">
-				<div class="main-img">
-					<img src="static/images/etoys_main_00_A.png">
-					<img src="static/images/etoys_main_00_B.png">
-					<div class="text-wrapper">
-						<h6 class="category margin bottom5">UI/VISUAL DESIGN</h6>
-						<h2 class="title margin bottom5">Etoys.com</h2>
-					</div>
+				<div class="scroll-icon">
+					<a href="#secondpage">
+						<i class="ion-ios-arrow-thin-down"></i>
+					</a>
 				</div>
 			</div>
-			<a href="" class="arrowdown">
-				<i class="ion-ios-arrow-thin-down"></i>
-			</a>
-		</div>
-		<div id="thirdpage" class="section">
-			<div class="content-container">
-				<div class="main-img">
-					<img src="static/images/spinner_main_00.png">
-					<div class="text-wrapper">
-						<h6 class="category margin bottom5">UI/VISUAL DESIGN</h6>
-						<h2 class="title margin bottom5">FASHION</h2>
-						<h2 class="title margin bottom5">APP</h2>
+			<div id="secondpage" class="section" style="background-color: #9df7d2">
+				<div class="content-container">
+					<div class="main-img">
+						<img src="static/images/ikea_main_00.png">
+						<div class="text-wrapper">
+							<h6 class="category margin bottom5 bg-black">UI/VISUAL DESIGN</h6>
+							<h2 class="title margin bottom5 bg-black">Pol</h2>
+							<h2 class="title margin bottom5 bg-black">App Design</h2>
+						</div>
 					</div>
 				</div>
-			</div>
-			<a href="" class="arrowdown">
-				<i class="ion-ios-arrow-thin-down"></i>
-			</a>
-		</div>
-		<div id="fourthpage" class="section">
-			<div class="content-container">
-				<div class="main-img">
-					<img src="static/images/spinner_main_00.png">
-					<div class="text-wrapper">
-						<h6 class="category margin bottom5">UI/VISUAL DESIGN</h6>
-						<h2 class="title margin bottom5">FASHION</h2>
-						<h2 class="title margin bottom5">APP</h2>
-					</div>
+				<div class="scroll-icon">
+					<a href="#thirdpage">
+						<i class="ion-ios-arrow-thin-down"></i>
+					</a>
 				</div>
 			</div>
-			<a href="" class="arrowdown">
-				<i class="ion-ios-arrow-thin-down"></i>
-			</a>
-		</div>
-		<div id="fifthpage" class="section">
-			<div class="content-container">
-				<div class="main-img">
-					<img src="static/images/spinner_main_00.png">
-					<div class="text-wrapper">
-						<h6 class="category margin bottom5">UI/VISUAL DESIGN</h6>
-						<h2 class="title margin bottom5">FASHION</h2>
-						<h2 class="title margin bottom5">APP</h2>
+			<div id="thirdpage" class="section" style="background-color: #f7cf1a">
+				<div class="content-container">
+					<div class="main-img">
+						<img src="static/images/etoys_main_00_A.png">
+						<img id="etoys-iphone" src="static/images/etoys_main_00_B.png">
+						<div class="text-wrapper">
+							<h6 class="category margin bottom5 bg-black">UI/VISUAL DESIGN</h6>
+							<h2 class="title margin bottom5 bg-black">Etoys.com</h2>
+						</div>
 					</div>
 				</div>
+				<div class="scroll-icon">
+					<a href="#fourthpage">
+						<i class="ion-ios-arrow-thin-down"></i>
+					</a>
+				</div>
 			</div>
-			<a href="" class="arrowdown">
-				<i class="ion-ios-arrow-thin-down"></i>
-			</a>
+			<div id="fourthpage" class="section" style="background-color: #3370f7">
+				<div class="content-container">
+					<div class="main-img">
+						<img src="static/images/ikea_main_00.png">
+						<div class="text-wrapper">
+							<h6 class="category margin bottom5 bg-black">UI/VISUAL DESIGN</h6>
+							<h2 class="title margin bottom5 bg-black">IKEA Redesign</h2>
+						</div>
+					</div>
+				</div>
+				<div class="scroll-icon">
+					<a href="#fifthpage">
+						<i class="ion-ios-arrow-thin-down"></i>
+					</a>
+				</div>
+			</div>
+			<div id="fifthpage" class="section" style="background-color: #77e1da">
+				<div class="content-container">
+					<div class="main-img text-center margin right5" style="background-color: #29d6b7">
+						<h2 class="category margin top50">About me</h2>
+						<h6 class="title margin bottom5">Contact</h6>
+					</div>
+					<div class="main-img text-center margin left5" style="background-color: #d78eb1">
+						<h2 class="category margin top50">To See More Works</h2>
+						<h6 class="title margin bottom5">Works</h6>
+					</div>
+				</div>
+				<div class="title text-center">
+					<h6 class="copyrighted">Copyright © 2016 Zina Yoo</h6>
+				</div>
+			</div>
 		</div>
 	</div>
+<<<<<<< HEAD
 	<div id="right-nav" class="right">
+=======
+	<div id="fp-nav">
+>>>>>>> develop
 		<ul>
 			<li>
 				<a href="#firstpage">
@@ -134,16 +150,27 @@
 				</a>
 			</li>
 			<li>
+<<<<<<< HEAD
+=======
+				<a href="#fourthpage">
+					<span></span>
+				</a>
+			</li>
+			<li>
+>>>>>>> develop
 				<a href="#fifthpage">
 					<span></span>
 				</a>
 			</li>
 		</ul>
 	</div>
+<<<<<<< HEAD
 	<footer>
 		<h2>Say Hello!</h2>
 		<a href="mailto:hellozinayoo@gmail.com">hellozinayoo@gmail.com</a>
 	</footer>
+=======
+>>>>>>> develop
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -153,6 +180,7 @@
 	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
 	<script type="text/javascript" src="static/library/jquery-scroll/vendors/scrolloverflow.min.js"></script>
 	<script type="text/javascript" src="static/library/jquery-scroll/jquery.fullpage.js"></script>
+	<script type="text/javascript" src="static/library/smoothState.js-master/jquery.smoothState.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			$('#fullpage').fullpage();
@@ -170,6 +198,101 @@
 				$(".header-menu-close").toggle();
 			});
 		});
+	</script>
+	<script>
+		$('#fullpage').fullpage({
+			sectionSelector: '.section',
+//			slideSelector: '.horizontal-scrolling',
+			controlArrows: false
+			// more options here
+		});
+	</script>
+	<script>
+		$(function() {
+			$('#fullpage').smoothState();
+
+		});
+		$('#fullpage').fullpage({
+			sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F'],
+			sectionSelector: '.vertical-scrolling',
+			slideSelector: '.horizontal-scrolling',
+			navigation: true,
+			slidesNavigation: true,
+			controlArrows: false,
+			anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
+			menu: '#menu',
+
+			afterLoad: function(anchorLink, index) {
+				$header_top.css('background', 'rgba(0, 47, 77, .3)');
+				$nav.css('background', 'rgba(0, 47, 77, .25)');
+				if (index == 5) {
+					$('#fp-nav').hide();
+				}
+			},
+
+			onLeave: function(index, nextIndex, direction) {
+				if(index == 5) {
+					$('#fp-nav').show();
+				}
+			},
+
+			afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
+				if(anchorLink == 'fifthSection' && slideIndex == 1) {
+					$.fn.fullpage.setAllowScrolling(false, 'up');
+					$header_top.css('background', 'transparent');
+					$nav.css('background', 'transparent');
+					$(this).css('background', '#374140');
+					$(this).find('h2').css('color', 'white');
+					$(this).find('h3').css('color', 'white');
+					$(this).find('p').css(
+							{
+								'color': '#DC3522',
+								'opacity': 1,
+								'transform': 'translateY(0)'
+							}
+					);
+				}
+			},
+
+			onSlideLeave: function( anchorLink, index, slideIndex, direction) {
+				if(anchorLink == 'fifthSection' && slideIndex == 1) {
+					$.fn.fullpage.setAllowScrolling(true, 'up');
+					$header_top.css('background', 'rgba(0, 47, 77, .3)');
+					$nav.css('background', 'rgba(0, 47, 77, .25)');
+				}
+			}
+		});
+
+
+		//		$(function(){
+//			'use strict';
+//			var options = {
+//						prefetch: true,
+//						cacheLength: 2,
+//						onStart: {
+//							duration: 250, // Duration of our animation
+//							render: function ($container) {
+//								// Add your CSS animation reversing class
+//								$container.addClass('is-exiting');
+//
+//								// Restart your animation
+//								smoothState.restartCSSAnimations();
+//							}
+//						},
+//						onReady: {
+//							duration: 0,
+//							render: function ($container, $newContent) {
+//								// Remove your CSS animation reversing class
+//								$container.removeClass('is-exiting');
+//
+//								// Inject the new content
+//								$container.html($newContent);
+//
+//							}
+//						}
+//					},
+//					smoothState = $('#main').smoothState(options).data('smoothState');
+//		});
 	</script>
 </body>
 </html>
