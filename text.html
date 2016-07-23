@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Zina Yoo</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="static/library/jquery-scroll/jquery.fullpage.css">
+        <link rel="stylesheet" type="text/css" href="static/library/font-awesome-4.6.3/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="static/library/ionicons-2.0.1/css/ionicons.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,200italic,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="static/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
+        <link rel="stylesheet" type="text/css" href="static/css/index-style.css">
+        <link rel="stylesheet" type="text/css" href="static/css/media_screen.css">
+        <link rel="stylesheet" type="text/css" href="static/css/menu.css">
+    </head>
+    <body>
+        <header id="main-menu">
+            <nav>
+                <a href="index.html" class="copyright">
+                    <h1>ZINA YOO</h1>
+                </a>
+            </nav>
+        </header>
+        <div class="header">
+            <div class="header-menu margin left20 top20">
+                <a class="open" href="menu.html">
+                    <i class="ion-android-menu"></i>
+                </a>
+            </div>
+            <div class="header-menu-close margin left20 top20">
+                <a class="close" href="menu.html">
+                    <i class="ion-android-close"></i>
+                </a>
+            </div>
+        </div>
+        <div id="fullpage">
+            <div class="section">Some section</div>
+            <div class="section">Some section</div>
+            <div class="section">Some section</div>
+            <div class="section">Some section</div>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="static/library/jquery-scroll/vendors/jquery.easings.min.js"></script>
+        <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+        <script type="text/javascript" src="static/library/jquery-scroll/vendors/scrolloverflow.min.js"></script>
+        <script type="text/javascript" src="static/library/jquery-scroll/jquery.fullpage.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#fullpage').fullpage();
+            });
+        </script>
+        <script>
+            $(function(){
+                $(".header-menu-close").hide();
+                $(".open").on("click", function(){
+                    //				if($(this)== 'open'){
+                    //					$(this).text("close");
+                    //				} else {
+                    //					$(this).text("open");
+                    //				}
+                    $(".header-menu-close").toggle();
+                });
+            });
+        </script>
+    </body>
+</html>
