@@ -53,6 +53,7 @@ p.title-info
     width: 85%;
     height: 85%;
     position: relative;
+    text-align: center;
 }
 #fullpage .content-container
 {
@@ -71,67 +72,18 @@ p.title-info
 #fullpage .text-wrapper
 {
     width: 350px;
+    padding: 0.5%;
     position: absolute;
     top: 40%;
     right: 0;
     /*margin-right: -2%;*/
-    color: #ffffff;
+    color: #333333;
+    text-align: left;
 }
-.bg-black
-{
-    background-color: #000000;
-}
-
-/*navigation controls*/
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-    background: white;
-    width: 8px;
-    height: 8px;
-    margin: -4px 0 0 -4px;
-}
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span {
-    width: 16px;
-    height: 16px;
-    margin: -8px 0 0 -8px;
-    background: transparent;
-    box-sizing: border-box;
-    border: 1px solid #24221F;
-}
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-    background: white;
-    width: 8px;
-    height: 8px;
-    margin: -4px 0 0 -4px;
-}
-
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span {
-    width: 16px;
-    height: 16px;
-    margin: -8px 0 0 -8px;
-    background: transparent;
-    box-sizing: border-box;
-    border: 1px solid #24221F;
-}
-#fp-nav
-{
-    position: fixed;
-    z-index: 100;
-    right: 0;
-    top: 50%;
-    opacity: 1;
-}
-
-
-
-
+/*.bg-black*/
+/*{*/
+    /*background-color: #000000;*/
+/*}*/
 
 img#etoys-iphone
 {
@@ -141,12 +93,6 @@ img#etoys-iphone
     right: 2%;
     bottom: 0;
 }
-/*.flex-wrapper*/
-/*{*/
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
-/*}*/
 #fifthpage .main-img
 {
     width: 40%;
@@ -158,4 +104,32 @@ img#etoys-iphone
     position:absolute;
     top: 50%;
     transform: translate(-50%,-50%)!important;
+}
+
+/*navigation*/
+#fp-nav.right
+{
+    right: 2%;
+}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span
+{
+    border-radius: 0;
+    width: 30px;
+    height: 5px;
+    text-align: right;
+}
+#fp-nav ul li a span
+{
+    border-radius: 0;
+    width: 10px;
+    height: 5px;
+}
+/*#fullpage .section {background-color: #333333;}*/
+
+/*hover*/
+.text-wrapper:hover
+{
+    padding: 0.5%;
+    background-color: #333333;
+    color: #ffffff;
 }
