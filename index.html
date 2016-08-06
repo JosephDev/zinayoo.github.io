@@ -20,74 +20,82 @@
 	<link rel="stylesheet" type="text/css" href="static/library/spinner/css/spinner-kit.css">
 </head>
 <body>
-	<header id="main-menu">
-		<nav>
-			<a href="index.html" class="copyright">
-				<h1>ZINA YOO</h1>
+	<header>
+		<nav class="main-menu">
+			<a href="index.html">
+				<span class="copyright">ZINA YOO</span>
 			</a>
 		</nav>
 	</header>
 	<div class="header">
-		<div class="header-menu margin left20 top20">
+		<div class="header-menu">
 			<a href="#" class="menu-toggle">
 				<i class="ion-android-menu"></i>
 			</a>
 		</div>
-		<div class="header-menu-close margin left20 top20" style="display: none;">
-			<div class="wrapper margin top20 left60">
-				<a href="#" class="menu-toggle">
-					<i class="ion-close"></i>
-				</a>
-				<a href="index.html">
-					<h3 class="margin ">Home</h3>
-				</a>
-				<a href="works.html">
-					<h3>Works</h3>
-				</a>
-				<a href="digital-works.html">
-					<h4 class="margin left30">Digital/Interactive</h4>
-				</a>
-				<a href="motion-works.html">
-					<h4 class="margin left30">Motion</h4>
-				</a>
-				<a href="about.html">
-					<h3>About/Contact</h3>
-				</a>
-				<div class="contact-info">
-					<h4 class="margin top40 bottom2">Feel Free to say hello!</h4>
-					<a href="mailto:hellozinayoo@gmail.com">
-						<p class="margin bottom2"><i class="fa fa-envelope-o margin right5"></i>hellozinayoo@gmail.com<p>
+		<!--Covered Menu-->
+		<div class="header-menu-close">
+			<div class="wrapper">
+				<div class="header-menu">
+					<a href="#" class="menu-toggle">
+						<i class="ion-close"></i>
 					</a>
-					<p class="display inline-block margin bottom20 right5">
-						You can also find me at
-					</p>
-					<a href="http://www.linkedin.com/in/zinayoo" target="_blank">
-						<i class="ion-social-linkedin margin right5"></i>
-					</a>
-					<a href="http://www.linkedin.com/in/zinayoo" target="_blank">
-						<i class="ion-social-github margin right5"></i>
-					</a>
-					<a href="http://www.linkedin.com/in/zinayoo" target="_blank">
-						<i class="ion-social-instagram margin right5"></i>
-					</a>
-					<a href="http://www.linkedin.com/in/zinayoo" target="_blank">
-						<i class="ion-social-vimeo margin right5"></i>
-					</a>
-					<p>Copyright © 2016 · Zina Yoo</p>
+				</div>
+				<div class="contents">
+					<div>
+						<a href="index.html">
+							<h3>Home</h3>
+						</a>
+						<a href="works.html">
+							<h3>Works</h3>
+						</a>
+						<a href="digital-works.html">
+							<h4 class="margin left20">Digital/Interactive</h4>
+						</a>
+						<a href="motion-works.html">
+							<h4 class="margin left20">Motion</h4>
+						</a>
+						<a href="about.html">
+							<h3>About/Contact</h3>
+						</a>
+					</div>
+					<div class="contact-info">
+						<h4 class="margin top40 bottom2">Feel Free to say hello!</h4>
+						<a href="mailto:hellozinayoo@gmail.com">
+							<p class="margin bottom2"><i class="fa fa-envelope-o margin right5"></i>hellozinayoo@gmail.com<p>
+						</a>
+						<p class="display inline-block margin bottom20 right5">
+							You can also find me at
+						</p>
+						<a href="http://www.linkedin.com/in/zinayoo" target="_blank">
+							<i class="ion-social-linkedin margin right5"></i>
+						</a>
+						<a href="http://www.linkedin.com/in/zinayoo" target="_blank">
+							<i class="ion-social-github margin right5"></i>
+						</a>
+						<a href="http://www.linkedin.com/in/zinayoo" target="_blank">
+							<i class="ion-social-instagram margin right5"></i>
+						</a>
+						<a href="http://www.linkedin.com/in/zinayoo" target="_blank">
+							<i class="ion-social-vimeo margin right5"></i>
+						</a>
+						<p>Copyright © 2016 · Zina Yoo</p>
+					</div>
 				</div>
 			</div>
 		</div>
+		<!--end of Covered menu-->
 	</div>
 	<div id="fullpage" class="scene">
 		<div class="section">
-			<div class="content-container">
+			<div id="spinner" class="content-container" style="background-color: #0a833d">
 				<div class="main-img">
 					<div class="box">
 						<div class="square big"></div>
 						<div class="square small"></div>
 					</div>
 					<img src="static/images/spinner_main_00.png">
-					<div class="text-wrapper">
+					<div class="text-wrapper" style="display: none;">
 						<h6 class="category margin bottom5 bg-black">INTERACTION DESIGN</h6>
 						<h2 class="title margin bottom5 bg-black">SPINNER</h2>
 						<h2 class="title margin bottom5 bg-black">Kit</h2>
@@ -178,7 +186,7 @@
 		$(function(){
 			//menu Toggle
 			$(".menu-toggle").on("click", function(){
-				$(".header-menu").fadeToggle();
+				$(".header-menu-close").fadeToggle();
 			});
 			// fullpage plugin
 			$('#fullpage').fullpage({

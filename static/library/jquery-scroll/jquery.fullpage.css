@@ -99,16 +99,20 @@ html.fp-enabled,
     -webkit-transition: none !important;
     transition: none !important;
 }
+
+/*Right Navigation*/
+/*modified by z.y*/
+
 #fp-nav {
     position: fixed;
     z-index: 100;
-    margin-top: -32px;
+    margin-top: -30px;
     top: 50%;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
 }
 #fp-nav.right {
-    right: 17px;
+    right: 20px;
 }
 #fp-nav.left {
     left: 17px;
@@ -210,6 +214,9 @@ html.fp-enabled,
 #fp-nav ul li .fp-tooltip.left {
     left: 20px;
 }
+/* end of modification*/
+/*modified by z.y*/
+
 .fp-auto-height.fp-section,
 .fp-auto-height .fp-slide,
 .fp-auto-height .fp-tableCell{
