@@ -116,7 +116,7 @@
 .main-menu .copyright {
     /*float: left;*/
     font-size: 2rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     text-align: center;
     line-height: 60px;
     font-weight: 600;
@@ -180,6 +180,7 @@ footer h3
     color: #999999;
     font-weight: 100;
 }
+
 
 /*slideshow*/
 #owl-demo .owl-item div{
