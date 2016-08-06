@@ -10,6 +10,9 @@ p.title-info
     height: 85%;
     position: relative;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #fullpage .content-container
 {
@@ -45,7 +48,7 @@ img#etoys-iphone
     text-align: left;
     border: 5px solid #000000;
     background: #ffffff;
-    /*display: none;*/
+    display: none;
 }
 .text-wrapper .category
 {
@@ -64,6 +67,12 @@ img#etoys-iphone
 }
 .section-footer
 {
+    position: relative;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.02rem;
@@ -91,7 +100,7 @@ img#etoys-iphone
 }
 .intro i
 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #444444;
 }
 
@@ -100,7 +109,7 @@ a, span, ul, li, div:hover
 {
     cursor: nw-resize ;
 }
-div.content-container :hover
+div.main-img :hover
 {
     cursor: none;
 }
