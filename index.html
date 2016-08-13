@@ -256,9 +256,9 @@
 				$(".text-wrapper").hide();
 			});
 			// follow event
-			$(".main-img").bind("mousemove", function(e){
+			$(".main-img, .text-wrapper").bind("mousemove", function(e){
 				// attach contents on cursor
-				$(".text-wrapper").css({left: e.clientX-220, top: e.clientY-120});
+				$(".text-wrapper").css({left: e.clientX-120, top: e.clientY-60});
 			});
 			//loading spinner
 			setTimeout(function(){
