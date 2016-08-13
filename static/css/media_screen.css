@@ -1,0 +1,234 @@
+@media (min-width: 368px) and (max-width: 767px)
+{
+    /*contents*/
+    #fullpage .content-container
+    {
+        width: 80%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*margin-left: 10%;*/
+    }
+    #fullpage img
+    {
+        max-width: 100%;
+    }
+    /*main intro*/
+    .intro, .intro a
+    {
+        width: 100%;
+        margin-top: 5%;
+        text-align: center;
+        color: #ffffff;
+    }
+    .intro h2
+    {
+        font-size: 3.3rem;
+        line-height: 4.2rem;
+        letter-spacing: -0.1rem;
+        font-weight: 700;
+    }
+    .intro h3
+    {
+        font-size: 1.5rem;
+        letter-spacing: 0rem;
+        font-weight: 700;
+    }
+    .intro i
+    {
+        font-size: 2rem;
+        color: #444444;
+    }
+
+    /*menu*/
+    .contents
+    {
+        text-align: center;
+        margin-top: 35%;
+    }
+    div.wrapper h3
+    {
+        font-size: 3.3rem;
+        line-height: 4.2rem;
+        letter-spacing: -0.1rem;
+        font-weight: 700;
+    }
+    div.wrapper h4
+    {
+        font-size: 1.5rem;
+        letter-spacing: 0rem;
+        line-height: 3.2rem;
+        font-weight: 700;
+    }
+    div.wrapper h5
+    {
+        font-size: 1rem;
+        letter-spacing: 0rem;
+        line-height: 2.7rem;
+        font-weight: 500;
+    }
+    .contact-info p
+    {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.02rem;
+        margin-top: 2rem;
+    }
+    .contact-info
+    {
+        margin-top: 3rem;
+        color: #666666;
+    }
+    .contact-info i
+    {
+        font-size: 2rem;
+    }
+
+    /*text-wrapper*/
+    #fullpage .text-wrapper
+    {
+        width: 300px;
+        padding: 0;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        color: #000000;
+        text-align: center;
+        border: 0px;
+        background: none;
+        /*display: none;*/
+    }
+    .text-wrapper .category
+    {
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+        color: #000000;
+    }
+    #fullpage h2.title
+    {
+        font-size: 4.5rem;
+        line-height: 3.5rem;
+        letter-spacing: -0.1rem;
+        font-weight: 600;
+        position: relative;
+    }
+    .section-footer
+    {
+        position: relative;
+        bottom: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.02rem;
+    }
+    .text-wrapper span:after
+    {
+        content: "\A";
+    }
+
+
+    /*main-img*/
+    .main-img
+    {
+        width: 100%;
+        /*height: 80%;*/
+        position: absolute;
+        bottom: -5px;
+        text-align: center;
+        /*display: flex;*/
+        /*align-items: flex-end;*/
+        /*justify-content: center;*/
+    }
+
+    #fp-nav
+    {
+        display: none;
+    }
+}
+
+/*ipad*/
+@media (min-width: 768px) and (max-width: 1024px)
+{
+
+    /*menu*/
+    .main-menu .copyright {
+        /*float: left;*/
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        line-height: 60px;
+        font-weight: 600;
+    }
+    .contents
+    {
+        text-align: center;
+        margin-top: 30%;
+    }
+    #fullpage .content-container
+    {
+        width: 80%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*margin-left: 10%;*/
+    }
+
+    .main-img
+    {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        bottom: -65px;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    /*text-wrapper*/
+    #fullpage .text-wrapper
+    {
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        color: #000000;
+        text-align: center;
+        border: 0px;
+        background: none;
+        /*display: none;*/
+    }
+    .text-wrapper .category
+    {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+        color: #000000;
+    }
+    #fullpage h2.title
+    {
+        font-size: 5.5rem;
+        line-height: 4rem;
+        letter-spacing: -0.1rem;
+        font-weight: 600;
+        position: relative;
+    }
+    .section-footer
+    {
+        display: none;
+    }
+
+    /*navigation*/
+    #fp-nav {
+        display: none;
+    }
+}

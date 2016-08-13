@@ -121,13 +121,6 @@
     line-height: 60px;
     font-weight: 600;
 }
-div.scroll-icon
-{
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    font-size: 3rem;
-}
 /*buttons*/
 a.button
 {

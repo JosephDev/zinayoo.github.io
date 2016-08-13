@@ -36,6 +36,7 @@ img#etoys-iphone
     right: 2%;
     bottom: 0;
 }
+
 /*text-wrapper*/
 #fullpage .text-wrapper
 {
@@ -104,11 +105,6 @@ img#etoys-iphone
     color: #444444;
 }
 
-/*img hover*/
-/*a, span, ul, li, div:hover*/
-/*{*/
-    /*cursor: nw-resize ;*/
-/*}*/
 div.main-img :hover
 {
     cursor: none;
@@ -137,4 +133,13 @@ span.inter:hover
     color: #ffffff;
     background: #000000;
     cursor: pointer;
+}
+
+div.scroll-icon
+{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    font-size: 3rem;
+    z-index: 10;
 }
