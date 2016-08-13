@@ -260,10 +260,9 @@
 				// attach contents on cursor
 				$(".text-wrapper").css({left: e.clientX-220, top: e.clientY-120});
 			});
-			$("#page_spinner").fadeToggle();
 			//loading spinner
 			setTimeout(function(){
-				$("#spinner").fadeOut('slow', function(e){ e.remove(); });
+				$("#spinner").fadeOut('slow', function(){ $("#spinner").remove(); });
 			}, 1500);
 		});
 	</script>
