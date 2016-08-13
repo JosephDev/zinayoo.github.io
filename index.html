@@ -20,6 +20,12 @@
 	<link rel="stylesheet" type="text/css" href="static/library/spinner/css/spinner-kit.css">
 </head>
 <body>
+	<div id="spinner" style="width: 100%; height: 100%; background: #ffffff; position: absolute; z-index: 20000;">
+		<div class="box">
+			<div class="square big"></div>
+			<div class="square small"></div>
+		</div>
+	</div>
 	<header>
 		<nav class="main-menu">
 			<a href="index.html">
@@ -59,7 +65,7 @@
 							<h3>About</h3>
 						</a>
 					</div>
-					<div class="contact-info margin top15">
+					<div class="contact-info margin top15 left10">
 						<a href="http://www.linkedin.com/in/zinayoo" target="_blank">
 							<i class="ion-social-linkedin margin right10"></i>
 						</a>
@@ -87,9 +93,9 @@
 			<div class="content-container">
 				<div class="intro">
 					<h2>Hello, I am</h2>
-					<h2>a Visual, Interactive Designer</h2>
+					<h2>a <span class="vis">Visual</span>, <span class="inter">Interactive</span> Designer</h2>
 					<h3 class="margin top10">Living in Los Angeles, CA</h3>
-					<div class="margin top30">
+					<div class="margin top25">
 						<a href="http://www.linkedin.com/in/zinayoo" target="_blank">
 							<i class="ion-social-linkedin margin right10"></i>
 						</a>
@@ -116,17 +122,22 @@
 		</div>
 		<div class="section" style="background-color: rgb(110, 189, 214)">
 			<div class="content-container">
+				<div class="text-wrapper hidden-xs">
+					<h6 class="category margin bottom5">INTERACTION DESIGN</h6>
+					<h2 class="title margin bottom5">SPINNER</h2>
+					<h2 class="title margin bottom5">KIT</h2>
+				</div>
+				<!--<div class="text-wrapper visible-xs">-->
+					<!--<h6 class="category margin bottom5">INTERACTION DESIGN</h6>-->
+					<!--<h2 class="title margin bottom5">SPINNER</h2>-->
+					<!--<h2 class="title margin bottom5">KIT</h2>-->
+				<!--</div>-->
 				<div class="main-img">
 					<div class="box">
 						<div class="square big"></div>
 						<div class="square small"></div>
 					</div>
-					<img src="static/images/spinner_main_00.png">
-					<div class="text-wrapper">
-						<h6 class="category margin bottom5">INTERACTION DESIGN</h6>
-						<h2 class="title margin bottom5">SPINNER</h2>
-						<h2 class="title margin bottom5">KIT</h2>
-					</div>
+					<img class="shadow" src="static/images/browser-main.png">
 				</div>
 			</div>
 			<div class="scroll-icon">
@@ -205,13 +216,26 @@
 				navigation: true,
 				anchors:['firstpage', 'secondpage', 'thirdpage','fourthpage', 'fifthpage']
 			});
-//			mouse hover
-			$(".main-img").bind("mousemove", function(){
-				$('.text-wrapper').css({
-					left:  e.pageX + 5,
-					top:   e.pageY
-				});
+			//mouse hover
+			// into bigbox event
+			$(".main-img").mouseover(function(e){
+				// show contents
+				$(".text-wrapper").show();
 			});
+			// out event
+			$(".main-img").mouseleave(function(){
+				$(".text-wrapper").hide();
+			});
+			// follow event
+			$(".main-img").bind("mousemove", function(e){
+				// attach contents on cursor
+				$(".text-wrapper").css({left: e.clientX-220, top: e.clientY-120});
+			});
+			$("#page_spinner").fadeToggle();
+			//loading spinner
+			setTimeout(function(){
+				$("#spinner").fadeOut('slow', function(e){ e.remove(); });
+			}, 1500);
 		});
 	</script>
 </body>

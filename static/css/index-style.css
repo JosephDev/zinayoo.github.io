@@ -42,8 +42,8 @@ img#etoys-iphone
     width: 400px;
     padding: 0.8%;
     position: absolute;
-    top: 40%;
-    right: 0;
+    top: 0;
+    left: 0;
     color: #000000;
     text-align: left;
     border: 5px solid #000000;
@@ -105,10 +105,10 @@ img#etoys-iphone
 }
 
 /*img hover*/
-a, span, ul, li, div:hover
-{
-    cursor: nw-resize ;
-}
+/*a, span, ul, li, div:hover*/
+/*{*/
+    /*cursor: nw-resize ;*/
+/*}*/
 div.main-img :hover
 {
     cursor: none;
@@ -118,4 +118,23 @@ div.main-img :hover
 {
     position: absolute;
     float: left;
+    z-index: 1000;
+}
+#page_spinner
+{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 5s ease-in-out;
+    -moz-transition: all 5s ease-in-out;
+}
+span.vis:hover
+{
+    color: red;
+    cursor: pointer;
+}
+span.inter:hover
+{
+    color: #ffffff;
+    background: #000000;
+    cursor: pointer;
 }

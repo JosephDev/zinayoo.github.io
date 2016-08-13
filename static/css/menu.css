@@ -62,9 +62,9 @@ nav i:first-child
     text-align: center;
     margin-top: 5%;
 }
-.contact-info a
+.contact-info i
 {
-    font-size: 22px;
+    font-size: 2.3rem;
 }
 .header-menu
 {
